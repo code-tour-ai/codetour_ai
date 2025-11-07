@@ -31,7 +31,7 @@ ext install saurabh-yergattikar.codetour-ai
 
 ## 🎬 See It In Action
 
-![Code Tour Demo](images/code_tour.gif)
+![Code Tour Demo](images/code_tour_hd_speed.gif)
 
 Watch CodeTour AI analyze your codebase and generate a comprehensive, narrative-driven tour that explains:
 - **Project Architecture** - High-level component structure
