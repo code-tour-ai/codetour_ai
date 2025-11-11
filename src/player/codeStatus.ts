@@ -15,9 +15,8 @@ export async function registerCodeStatusModule() {
   onDidStartTour(async ([tour, stepNumber]) => {
     const disposeable = await extension.exports.updateStatus({
       emoji: "🗺️",
-      message: `Tour de Code AI: ${tour.title} (#${stepNumber + 1} of ${
-        tour.steps.length
-      })`,
+      message: `CodeTour: ${tour.title} (#${stepNumber + 1} of ${tour.steps.length
+        })`,
       limitedAvailability: true
     });
 

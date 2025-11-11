@@ -28,10 +28,10 @@ export function registerStatusBar() {
     () => [
       store.activeTour
         ? [
-            store.activeTour.step,
-            store.activeTour.tour.title,
-            store.activeTour.tour.steps.length
-          ]
+          store.activeTour.step,
+          store.activeTour.tour.title,
+          store.activeTour.tour.steps.length
+        ]
         : null,
       store.isRecording
     ],
@@ -44,9 +44,8 @@ export function registerStatusBar() {
         const prefix = store.isRecording ? "Recording " : "";
         const tourTitle = getTourTitle(store.activeTour.tour);
 
-        currentTourItem.text = `${prefix}Tour de Code AI: #${
-          store.activeTour.step + 1
-        } of ${store.activeTour.tour.steps.length} (${tourTitle})`;
+        currentTourItem.text = `${prefix}CodeTour: #${store.activeTour.step + 1
+          } of ${store.activeTour.tour.steps.length} (${tourTitle})`;
       } else {
         if (currentTourItem) {
           currentTourItem.dispose();

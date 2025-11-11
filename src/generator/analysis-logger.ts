@@ -13,7 +13,7 @@ export class AnalysisLogger {
         this.logPath = path.join(workspaceRoot, '.codetour-analysis.log');
         this.clear();
         this.log('='.repeat(80));
-        this.log('Tour de Code AI - TreeSitter AST Analysis Log');
+        this.log('CodeTour AI - TreeSitter AST Analysis Log');
         this.log(`Timestamp: ${new Date().toISOString()}`);
         this.log('='.repeat(80));
     }

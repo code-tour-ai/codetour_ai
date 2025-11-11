@@ -88,9 +88,9 @@ export function registerPlayerCommands() {
     `${EXTENSION_NAME}.sendTextToTerminal`,
     async (text: string) => {
       if (!terminal) {
-        terminal = vscode.window.createTerminal("Tour de Code AI");
+        terminal = vscode.window.createTerminal("CodeTour");
         vscode.window.onDidCloseTerminal(term => {
-          if (term.name === "Tour de Code AI") {
+          if (term.name === "CodeTour") {
             terminal = null;
           }
         });
@@ -269,12 +269,12 @@ export function registerPlayerCommands() {
     store.showMarkers = showMarkers;
 
     vscode.workspace
-      .getConfiguration("tourdecode")
+      .getConfiguration("codetour")
       .update("showMarkers", showMarkers, vscode.ConfigurationTarget.Global);
 
     vscode.commands.executeCommand(
       "setContext",
-      "tourdecode:showingMarkers",
+      "codetour:showingMarkers",
       showMarkers
     );
   }
