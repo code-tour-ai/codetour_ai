@@ -3,11 +3,11 @@
 
 import { Uri } from "vscode";
 
-export const EXTENSION_NAME = "codetour";
+export const EXTENSION_NAME = "tourdecode";
 
 export const FS_SCHEME = EXTENSION_NAME;
 export const FS_SCHEME_CONTENT = `${FS_SCHEME}-content`;
-export const CONTENT_URI = Uri.parse(`${FS_SCHEME_CONTENT}://current/CodeTour`);
+export const CONTENT_URI = Uri.parse(`${FS_SCHEME_CONTENT}://current/TourdeCode`);
 
 export const ICON_URL =
   "https://cdn.jsdelivr.net/gh/vsls-contrib/code-tour/images/icon.png";

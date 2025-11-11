@@ -2,7 +2,7 @@
 
 ## 🚀 What Just Changed
 
-CodeTour now uses **Repomix's technique** to generate code tours with **actual line numbers** from your source files!
+Tour de Code AI now uses **Repomix's technique** to generate code tours with **actual line numbers** from your source files!
 
 ---
 
@@ -12,13 +12,13 @@ CodeTour now uses **Repomix's technique** to generate code tours with **actual l
 Open any workspace in VS Code with source code files.
 
 ### Step 2: Configure LLM (if not already done)
-Run command: `CodeTour: Configure LLM Settings`
+Run command: `Tour de Code AI: Configure LLM Settings`
 - Choose provider (OpenAI, Anthropic, or Custom)
 - Enter your API key
 - Select model (e.g., `gpt-4o-mini`, `claude-3-5-sonnet`)
 
 ### Step 3: Generate a Tour
-Run command: `CodeTour: Generate Code Tour (AI)`
+Run command: `Tour de Code AI: Generate Tour (AI)`
 - Enter tour title (e.g., "Architecture Overview")
 - Enter description (optional)
 - Wait for generation (~30-90 seconds)
@@ -213,7 +213,7 @@ workspace/
 - All files excluded by ignore patterns
 
 **Solution:**
-- Check console logs (View → Output → "CodeTour")
+- Check console logs (View → Output → "Tour de Code AI")
 - Verify workspace has source code files
 - Check file permissions
 
@@ -275,14 +275,14 @@ Future versions will support customization:
 
 ```json
 {
-  "codetour.repomix.enabled": true,
-  "codetour.repomix.maxFileSize": 52428800,
-  "codetour.repomix.ignorePatterns": [
+  "tourdecode.repomix.enabled": true,
+  "tourdecode.repomix.maxFileSize": 52428800,
+  "tourdecode.repomix.ignorePatterns": [
     "**/node_modules/**",
     "**/*.test.*",
     "**/dist/**"
   ],
-  "codetour.repomix.includePatterns": [
+  "tourdecode.repomix.includePatterns": [
     "**/*.ts",
     "**/*.js",
     "**/*.py"

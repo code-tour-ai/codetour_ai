@@ -2,7 +2,7 @@
 
 ## 🎉 Integration Complete!
 
-Successfully integrated **Repomix's codebase analysis technique** into **CodeTour** for generating AI-powered code tours with **accurate line numbers**.
+Successfully integrated **Repomix's codebase analysis technique** into **Tour de Code AI** for generating AI-powered code tours with **accurate line numbers**.
 
 ---
 
@@ -84,14 +84,14 @@ The LLM now:
 - ✅ References actual source code
 - ✅ Generates accurate tour steps
 
-### 4. ✅ Uses CodeTour's LLM Settings
-**How:** CodeTour's existing `LLMService` is used for all LLM calls
+### 4. ✅ Uses Tour de Code AI's LLM Settings
+**How:** Tour de Code AI's existing `LLMService` is used for all LLM calls
 
 **Settings Used:**
-- `codetour.llm.provider` (OpenAI, Anthropic, Custom)
-- `codetour.llm.apiKey` (stored securely)
-- `codetour.llm.model` (GPT-4, Claude, etc.)
-- `codetour.llm.apiUrl` (custom endpoints)
+- `tourdecode.llm.provider` (OpenAI, Anthropic, Custom)
+- `tourdecode.llm.apiKey` (stored securely)
+- `tourdecode.llm.model` (GPT-4, Claude, etc.)
+- `tourdecode.llm.apiUrl` (custom endpoints)
 
 **No Changes Needed:** Repomix doesn't make LLM calls directly; it only generates the XML summary. All LLM calls go through the existing `LLMService`.
 
@@ -365,7 +365,7 @@ Step 4: Save tour with accurate line numbers
 ```markdown
 ## 🎉 New: Repomix Integration
 
-CodeTour now uses **Repomix's technique** to generate more accurate code tours!
+Tour de Code AI now uses **Repomix's technique** to generate more accurate code tours!
 
 **What's New:**
 - ✅ **Accurate line numbers** - Tours now reference exact locations in your code
@@ -374,7 +374,7 @@ CodeTour now uses **Repomix's technique** to generate more accurate code tours!
 - 📦 **Repomix output** - Inspect `repomix-output.xml` to see what was analyzed
 
 **How It Works:**
-When you generate a tour, CodeTour now:
+When you generate a tour, Tour de Code AI now:
 1. Runs Repomix analysis to create a comprehensive codebase summary
 2. Uses TreeSitter to extract code structure
 3. Combines both sources to give the AI maximum context
@@ -435,7 +435,7 @@ See `REPOMIX_INTEGRATION.md` for full details.
 
 ✅ **Integration Successful!**
 
-Repomix's powerful codebase analysis is now fully integrated into CodeTour, providing:
+Repomix's powerful codebase analysis is now fully integrated into Tour de Code AI, providing:
 - 🎯 More accurate line numbers
 - 📚 Better code context for AI
 - 🚀 Higher quality code tours

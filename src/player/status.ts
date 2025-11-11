@@ -44,7 +44,7 @@ export function registerStatusBar() {
         const prefix = store.isRecording ? "Recording " : "";
         const tourTitle = getTourTitle(store.activeTour.tour);
 
-        currentTourItem.text = `${prefix}CodeTour: #${
+        currentTourItem.text = `${prefix}Tour de Code AI: #${
           store.activeTour.step + 1
         } of ${store.activeTour.tour.steps.length} (${tourTitle})`;
       } else {

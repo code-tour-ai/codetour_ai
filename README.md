@@ -1,12 +1,12 @@
-# CodeTour AI 🗺️✨
+# Tour de Code AI 🗺️✨
 
-[![VS Code Marketplace](https://img.shields.io/visual-studio-marketplace/v/saurabh-yergattikar.codetour-ai?style=for-the-badge&label=VS%20Code%20Marketplace&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=saurabh-yergattikar.codetour-ai)
-[![Installs](https://img.shields.io/visual-studio-marketplace/i/saurabh-yergattikar.codetour-ai?style=for-the-badge)](https://marketplace.visualstudio.com/items?itemName=saurabh-yergattikar.codetour-ai)
-[![Rating](https://img.shields.io/visual-studio-marketplace/r/saurabh-yergattikar.codetour-ai?style=for-the-badge)](https://marketplace.visualstudio.com/items?itemName=saurabh-yergattikar.codetour-ai)
+[![VS Code Marketplace](https://img.shields.io/visual-studio-marketplace/v/saurabh-yergattikar.tourdecode-ai?style=for-the-badge&label=VS%20Code%20Marketplace&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=saurabh-yergattikar.tourdecode-ai)
+[![Installs](https://img.shields.io/visual-studio-marketplace/i/saurabh-yergattikar.tourdecode-ai?style=for-the-badge)](https://marketplace.visualstudio.com/items?itemName=saurabh-yergattikar.tourdecode-ai)
+[![Rating](https://img.shields.io/visual-studio-marketplace/r/saurabh-yergattikar.tourdecode-ai?style=for-the-badge)](https://marketplace.visualstudio.com/items?itemName=saurabh-yergattikar.tourdecode-ai)
 
-**Transform codebase onboarding from weeks to hours with AI-powered, narrative-driven code tours.**
+**Transform codebase onboarding from weeks to hours with AI-powered, narrative-driven guided tours.**
 
-CodeTour AI automatically generates comprehensive, mental-model-driven guided tours of any codebase using Repomix analysis and Large Language Models. Perfect for enterprise teams, open-source projects, and developers who want to accelerate knowledge transfer.
+Tour de Code AI automatically generates comprehensive, mental-model-driven guided tours of any codebase using Repomix analysis and Large Language Models. Perfect for enterprise teams, open-source projects, and developers who want to accelerate knowledge transfer.
 
 ---
 
@@ -24,18 +24,18 @@ CodeTour AI automatically generates comprehensive, mental-model-driven guided to
 ### Install from VS Code Marketplace
 
 1. Open VS Code Extensions (`Cmd+Shift+X` / `Ctrl+Shift+X`)
-2. Search for **"CodeTour AI"**
+2. Search for **"Tour de Code AI"**
 3. Click **Install**
 4. Configure your LLM API key (OpenAI, Anthropic, or custom)
 5. Start generating tours! ✨
 
 Or install via command:
 ```bash
-ext install saurabh-yergattikar.codetour-ai
+ext install saurabh-yergattikar.tourdecode-ai
 ```
 
 
-Watch CodeTour AI analyze your codebase and generate a comprehensive, narrative-driven tour that explains:
+Watch Tour de Code AI analyze your codebase and generate a comprehensive, narrative-driven tour that explains:
 - **Project Architecture** - High-level component structure
 - **Entry Points** - Where the application starts
 - **Data Flow** - How information moves through the system
@@ -57,7 +57,7 @@ Automatically generate comprehensive, narrative-driven code tours using **Repomi
 - 🔄 **Parallel processing** - 10x faster generation with concurrent chunks
 
 ### 📊 **Repomix-Powered Analysis**
-Unlike pattern-matching tools, CodeTour AI uses **Repomix** to generate a complete, AI-friendly summary of your entire codebase with actual line numbers. This ensures accurate, context-aware understanding.
+Unlike pattern-matching tools, Tour de Code AI uses **Repomix** to generate a complete, AI-friendly summary of your entire codebase with actual line numbers. This ensures accurate, context-aware understanding.
 
 **Benefits:**
 - ✅ **Full codebase analysis** - All source files with actual line numbers
@@ -112,8 +112,8 @@ Smart tour generation that creates a logical learning journey through your codeb
 ### 1. Configure Your LLM Provider
 
 Open VS Code and run:
-- **Command Palette** (`Cmd+Shift+P`): `CodeTour: Configure LLM Settings`
-- **Settings UI**: Search for "CodeTour" in VS Code settings
+- **Command Palette** (`Cmd+Shift+P`): `Tour de Code AI: Configure LLM Settings`
+- **Settings UI**: Search for "Tour de Code" in VS Code settings
 
 **Enter:**
 1. API provider (OpenAI, Anthropic, or Custom)
@@ -124,14 +124,14 @@ Open VS Code and run:
 
 **Option A: Command Palette**
 1. Press `Cmd+Shift+P` (Mac) or `Ctrl+Shift+P` (Windows/Linux)
-2. Run `CodeTour: Generate Code Tour (AI)`
+2. Run `Tour de Code AI: Generate Tour (AI)`
 3. Enter optional tour title and description
 4. Wait 1-3 minutes for generation
 5. Start exploring! 🎉
 
-**Option B: CodeTour Panel**
+**Option B: Tour de Code AI Panel**
 1. Open Explorer sidebar
-2. Find **CodeTour** panel
+2. Find **Tour de Code AI** panel
 3. Click sparkle icon (✨)
 4. Follow prompts
 
@@ -143,7 +143,7 @@ Open VS Code and run:
 - **End Tour**: Click stop button or press `Esc`
 
 **UI Controls:**
-- Click steps in CodeTour panel
+- Click steps in Tour de Code AI panel
 - Use navigation arrows in editor
 - View progress in status bar
 
@@ -177,14 +177,14 @@ Open VS Code and run:
 ```jsonc
 {
   // LLM Configuration
-  "codetour.llm.provider": "openai",
-  "codetour.llm.apiKey": "your-api-key-here",
-  "codetour.llm.model": "gpt-4o-mini",
-  "codetour.llm.apiUrl": "https://api.openai.com/v1/chat/completions",
+  "tourdecode.llm.provider": "openai",
+  "tourdecode.llm.apiKey": "your-api-key-here",
+  "tourdecode.llm.model": "gpt-4o-mini",
+  "tourdecode.llm.apiUrl": "https://api.openai.com/v1/chat/completions",
   
   // Display Settings
-  "codetour.showMarkers": true,
-  "codetour.promptForWorkspaceTours": true
+  "tourdecode.showMarkers": true,
+  "tourdecode.promptForWorkspaceTours": true
 }
 ```
 
@@ -192,7 +192,7 @@ Open VS Code and run:
 
 ## 🎯 How It Works
 
-CodeTour AI uses a sophisticated multi-stage pipeline:
+Tour de Code AI uses a sophisticated multi-stage pipeline:
 
 ### 1. **Repomix Analysis** 📦
 - Scans entire workspace for source files
@@ -334,7 +334,7 @@ AI tours are starting points! Feel free to:
 
 ## 🤝 Contributing
 
-CodeTour AI is free and open source. Contributions are welcome!
+Tour de Code AI is free and open source. Contributions are welcome!
 
 **How to Contribute:**
 1. Fork the repository
@@ -354,7 +354,7 @@ This project is licensed under the **MIT License** - see [LICENSE.txt](LICENSE.t
 
 ### Built Upon Microsoft's CodeTour
 
-**CodeTour AI** is built upon the excellent [CodeTour extension](https://github.com/microsoft/codetour) originally created by Microsoft Corporation.
+**Tour de Code AI** is built upon the excellent [CodeTour extension](https://github.com/microsoft/codetour) originally created by Microsoft Corporation.
 
 **Original Project:**
 - **Repository**: [microsoft/codetour](https://github.com/microsoft/codetour)
@@ -366,7 +366,7 @@ We extend our deepest gratitude to Microsoft and the original CodeTour team for 
 
 ### AI Enhancements
 
-The AI-powered tour generation features are original contributions to the CodeTour ecosystem:
+The AI-powered tour generation features are original contributions to the tour generation ecosystem:
 
 **New Features (v1.0.0):**
 - ✨ Repomix integration for comprehensive codebase analysis
@@ -380,7 +380,7 @@ The AI-powered tour generation features are original contributions to the CodeTo
 **AI Features:**
 - **Copyright**: Copyright (c) 2024-2025 Saurabh Yergattikar
 - **License**: MIT License (same as original)
-- **Repository**: [github.com/saurabh-yergattikar/codetour_ai](https://github.com/saurabh-yergattikar/codetour_ai)
+- **Repository**: [github.com/code-tour-ai/tourdecode_ai](https://github.com/code-tour-ai/tourdecode_ai)
 
 ### Acknowledgments
 
@@ -395,9 +395,9 @@ Special thanks to:
 
 ## 🔗 Links
 
-- **📦 VS Code Marketplace**: [Install CodeTour AI](https://marketplace.visualstudio.com/items?itemName=saurabh-yergattikar.codetour-ai)
-- **💻 GitHub Repository**: [saurabh-yergattikar/codetour_ai](https://github.com/saurabh-yergattikar/codetour_ai)
-- **🐛 Report Issues**: [GitHub Issues](https://github.com/saurabh-yergattikar/codetour_ai/issues)
+- **📦 VS Code Marketplace**: [Install Tour de Code AI](https://marketplace.visualstudio.com/items?itemName=saurabh-yergattikar.tourdecode-ai)
+- **💻 GitHub Repository**: [code-tour-ai/tourdecode_ai](https://github.com/code-tour-ai/tourdecode_ai)
+- **🐛 Report Issues**: [GitHub Issues](https://github.com/code-tour-ai/tourdecode_ai/issues)
 - **📖 Original CodeTour**: [microsoft/codetour](https://github.com/microsoft/codetour)
 - **📦 Repomix**: [Repomix Project](https://github.com/yamadashy/repomix)
 
@@ -424,7 +424,7 @@ A: Absolutely! Tours are saved as editable `.tour` JSON files. Customize as need
 A: Yes! Analyze entire monorepos or specific workspaces.
 
 **Q: What's the difference from Microsoft's CodeTour?**  
-A: This adds AI-powered tour generation using Repomix + LLMs. Original CodeTour requires manual tour creation.
+A: Tour de Code AI adds AI-powered tour generation using Repomix + LLMs. Original CodeTour requires manual tour creation.
 
 **Q: Can I contribute?**  
 A: Yes! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
@@ -433,9 +433,9 @@ A: Yes! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
 ## 🌟 Show Your Support
 
-If CodeTour AI helps you or your team:
-- ⭐ **Star** the [GitHub repository](https://github.com/saurabh-yergattikar/codetour_ai)
-- 🎉 **Rate** the extension on [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=saurabh-yergattikar.codetour-ai)
+If Tour de Code AI helps you or your team:
+- ⭐ **Star** the [GitHub repository](https://github.com/code-tour-ai/tourdecode_ai)
+- 🎉 **Rate** the extension on [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=saurabh-yergattikar.tourdecode-ai)
 - 💬 **Share** with your developer community
 - 🐛 **Report** bugs or request features
 
@@ -443,4 +443,4 @@ If CodeTour AI helps you or your team:
 
 **Made with ❤️ for the developer community.**
 
-*Transform onboarding from weeks to hours. Try CodeTour AI today!* 🚀
+*Transform onboarding from weeks to hours. Try Tour de Code AI today!* 🚀

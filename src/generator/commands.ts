@@ -109,8 +109,8 @@ export function registerGeneratorCommands(extensionPath: string) {
 
                 // Create settings panel
                 const panel = vscode.window.createWebviewPanel(
-                    "codetourLLMSettings",
-                    "CodeTour LLM Settings",
+                    "tourdecodeLLMSettings",
+                    "Tour de Code AI LLM Settings",
                     vscode.ViewColumn.One,
                     {
                         enableScripts: true
@@ -212,7 +212,7 @@ function getSettingsWebviewContent(
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CodeTour LLM Settings</title>
+    <title>Tour de Code AI LLM Settings</title>
     <style>
         body {
             font-family: var(--vscode-font-family);
@@ -348,7 +348,7 @@ function getSettingsWebviewContent(
 </head>
 <body>
     <div class="container">
-        <h1>🤖 CodeTour LLM Settings</h1>
+        <h1>🤖 Tour de Code AI LLM Settings</h1>
         
         <div class="info-box">
             <h3>📝 Quick Setup Guide</h3>

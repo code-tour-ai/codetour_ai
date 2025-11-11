@@ -1,6 +1,6 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
-// Repomix integration types for CodeTour
+// Repomix integration types for Tour de Code AI
 
 export interface RepomixConfig {
     workspaceRoot: string;

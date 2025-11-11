@@ -40,8 +40,8 @@ import { registerTextDocumentContentProvider } from "./fileSystem/documentProvid
 import { registerStatusBar } from "./status";
 import { registerTreeProvider } from "./tree";
 
-const CONTROLLER_ID = "codetour";
-const CONTROLLER_LABEL = "CodeTour";
+const CONTROLLER_ID = "tourdecode";
+const CONTROLLER_LABEL = "Tour de Code AI";
 
 let id = 0;
 
@@ -59,7 +59,7 @@ export function generatePreviewContent(content: string) {
   return content
     .replace(SHELL_SCRIPT_PATTERN, (_, script) => {
       const args = encodeURIComponent(JSON.stringify([script]));
-      const s = `> [${script}](command:codetour.sendTextToTerminal?${args} "Run \\"${script.replace(
+      const s = `> [${script}](command:tourdecode.sendTextToTerminal?${args} "Run \\"${script.replace(
         /"/g,
         "'"
       )}\\" in a terminal")`;
@@ -85,7 +85,7 @@ export function generatePreviewContent(content: string) {
     .replace(TOUR_REFERENCE_PATTERN, (_, linkTitle, tourTitle, stepNumber) => {
       if (!tourTitle) {
         const title = linkTitle || `#${stepNumber}`;
-        return `[${title}](command:codetour.navigateToStep?${stepNumber} "Navigate to step #${stepNumber}")`;
+        return `[${title}](command:tourdecode.navigateToStep?${stepNumber} "Navigate to step #${stepNumber}")`;
       }
 
       const tours = store.activeTour?.tours || store.tours;
@@ -98,7 +98,7 @@ export function generatePreviewContent(content: string) {
         }
         const argsContent = encodeURIComponent(JSON.stringify(args));
         const title = linkTitle || tour.title;
-        return `[${title}](command:codetour.startTourByTitle?${argsContent} "Start \\"${tour.title}\\" tour")`;
+        return `[${title}](command:tourdecode.startTourByTitle?${argsContent} "Start \\"${tour.title}\\" tour")`;
       }
 
       return _;
@@ -106,7 +106,7 @@ export function generatePreviewContent(content: string) {
     .replace(CODE_FENCE_PATTERN, (_, codeBlock) => {
       const params = encodeURIComponent(JSON.stringify([codeBlock]));
       return `${_}
-↪ [Insert Code](command:codetour.insertCodeSnippet?${params} "Insert Code")`;
+↪ [Insert Code](command:tourdecode.insertCodeSnippet?${params} "Insert Code")`;
     });
 }
 
@@ -300,7 +300,7 @@ async function renderCurrentStep() {
         false
       );
       const suffix = stepLabel ? ` (${stepLabel})` : "";
-      content += `← [Previous${suffix}](command:codetour.previousTourStep "Navigate to previous step")`;
+      content += `← [Previous${suffix}](command:tourdecode.previousTourStep "Navigate to previous step")`;
     } else {
       const previousTour = getPreviousTour();
       if (previousTour) {
@@ -310,7 +310,7 @@ async function renderCurrentStep() {
         const argsContent = encodeURIComponent(
           JSON.stringify([previousTour.title])
         );
-        content += `← [Previous Tour (${tourTitle})](command:codetour.startTourByTitle?${argsContent} "Navigate to previous tour")`;
+        content += `← [Previous Tour (${tourTitle})](command:tourdecode.startTourByTitle?${argsContent} "Navigate to previous tour")`;
       }
     }
 
@@ -323,7 +323,7 @@ async function renderCurrentStep() {
         false
       );
       const suffix = stepLabel ? ` (${stepLabel})` : "";
-      content += `${prefix}[Next${suffix}](command:codetour.nextTourStep "Navigate to next step") →`;
+      content += `${prefix}[Next${suffix}](command:tourdecode.nextTourStep "Navigate to next step") →`;
     } else if (isFinalStep) {
       const nextTour = getNextTour();
       if (nextTour) {
@@ -331,9 +331,9 @@ async function renderCurrentStep() {
         const argsContent = encodeURIComponent(
           JSON.stringify([nextTour.title])
         );
-        content += `${prefix}[Next Tour (${tourTitle})](command:codetour.finishTour?${argsContent} "Start next tour")`;
+        content += `${prefix}[Next Tour (${tourTitle})](command:tourdecode.finishTour?${argsContent} "Start next tour")`;
       } else {
-        content += `${prefix}[Finish Tour](command:codetour.finishTour "Finish the tour")`;
+        content += `${prefix}[Finish Tour](command:tourdecode.finishTour "Finish the tour")`;
       }
     }
   }

@@ -53,7 +53,7 @@ export class LLMService {
 
     public async generateCompletion(messages: LLMMessage[], retryCount = 0): Promise<LLMResponse> {
         if (!this.isConfigured()) {
-            throw new Error("LLM API key is not configured. Please configure it using 'CodeTour: Configure LLM Settings' command.");
+            throw new Error("LLM API key is not configured. Please configure it using 'Tour de Code AI: Configure LLM Settings' command.");
         }
 
         const MAX_RETRIES = 3;

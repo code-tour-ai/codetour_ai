@@ -1,6 +1,6 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
-// Repomix integration for CodeTour
+// Repomix integration for Tour de Code AI
 
 export { RepomixService } from "./repomix-service";
 export type {

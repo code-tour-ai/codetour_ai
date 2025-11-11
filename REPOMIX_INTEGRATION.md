@@ -1,8 +1,8 @@
-# Repomix Integration in CodeTour
+# Repomix Integration in Tour de Code AI
 
 ## Overview
 
-CodeTour now integrates **Repomix's** powerful codebase analysis technique to generate more accurate code tours with **actual line numbers** from source files. This integration combines:
+Tour de Code AI now integrates **Repomix's** powerful codebase analysis technique to generate more accurate code tours with **actual line numbers** from source files. This integration combines:
 
 1. **Repomix's comprehensive file analysis** - Generates a 1-page XML summary with line-numbered content
 2. **TreeSitter's AST parsing** - Extracts code structure (classes, functions, methods)
@@ -235,9 +235,9 @@ Located in: `src/generator/batch-generator.ts`
 Users can customize Repomix behavior in VS Code settings:
 ```json
 {
-  "codetour.repomix.maxFileSize": 52428800,
-  "codetour.repomix.includePatterns": ["**/*"],
-  "codetour.repomix.ignorePatterns": [
+  "tourdecode.repomix.maxFileSize": 52428800,
+  "tourdecode.repomix.includePatterns": ["**/*"],
+  "tourdecode.repomix.ignorePatterns": [
     "**/node_modules/**",
     "**/*.test.*"
   ]

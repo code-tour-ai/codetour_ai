@@ -22,7 +22,7 @@ import { getActiveWorkspacePath, getRelativePath } from "../utils";
 export async function saveTour(tour: CodeTour) {
   const uri = vscode.Uri.parse(tour.id);
   const newTour = {
-    $schema: "https://aka.ms/codetour-schema",
+        $schema: "https://aka.ms/tourdecode-schema",
     ...tour
   };
 
@@ -84,7 +84,7 @@ export function registerRecorderCommands() {
         : path.basename(title.path).replace(".tour", "");
 
     const tour = {
-      $schema: "https://aka.ms/codetour-schema",
+        $schema: "https://aka.ms/tourdecode-schema",
       title: tourTitle,
       steps: []
     };
@@ -162,7 +162,7 @@ export function registerRecorderCommands() {
     let ref;
 
     const mode = vscode.workspace
-      .getConfiguration("codetour")
+      .getConfiguration("tourdecode")
       .get("recordMode", "lineNumber");
 
     if (mode === "lineNumber") {
@@ -174,7 +174,7 @@ export function registerRecorderCommands() {
     startCodeTour(tour, 0, workspaceRoot, true);
 
     vscode.window.showInformationMessage(
-      "CodeTour recording started! Begin creating steps by opening a file, clicking the + button to the left of a line of code, and then adding the appropriate comments."
+      "Tour de Code AI recording started! Begin creating steps by opening a file, clicking the + button to the left of a line of code, and then adding the appropriate comments."
     );
   }
 
@@ -383,7 +383,7 @@ export function registerRecorderCommands() {
       };
 
       const mode = vscode.workspace
-        .getConfiguration("codetour")
+        .getConfiguration("tourdecode")
         .get("recordMode");
 
       if (mode === "pattern" && thread.range) {
@@ -459,7 +459,7 @@ export function registerRecorderCommands() {
       store.isEditing = true;
       await vscode.commands.executeCommand(
         "setContext",
-        "codetour:recording",
+        "tourdecode:recording",
         true
       );
       await vscode.commands.executeCommand("setContext", EDITING_KEY, true);
@@ -492,7 +492,7 @@ export function registerRecorderCommands() {
       vscode.commands.executeCommand("setContext", EDITING_KEY, false);
       await vscode.commands.executeCommand(
         "setContext",
-        "codetour:recording",
+        "tourdecode:recording",
         false
       );
 

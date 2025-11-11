@@ -445,7 +445,7 @@ export class TreeSitterAnalyzer {
 
     async analyzeProject(workspaceRoot: vscode.Uri): Promise<ProjectStructure> {
         console.log("📂 Starting TreeSitter AST code analysis...");
-        const config = vscode.workspace.getConfiguration("codetour");
+        const config = vscode.workspace.getConfiguration("tourdecode");
         const maxFiles = config.get<number>("autoGenerate.maxFilesToAnalyze", 200);
         const includeFileTypes = config.get<string[]>("autoGenerate.includeFileTypes", [".ts", ".js", ".py"]);
 

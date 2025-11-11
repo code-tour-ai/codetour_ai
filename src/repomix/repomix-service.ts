@@ -1,6 +1,6 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
-// Repomix Service for CodeTour - Generates comprehensive codebase summaries
+// Repomix Service for Tour de Code AI - Generates comprehensive codebase summaries
 
 import * as fs from "fs/promises";
 import * as path from "path";

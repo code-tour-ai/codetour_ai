@@ -68,8 +68,8 @@ function registerHoverProvider() {
       );
       const hovers = tourSteps.map(([tour, _, stepNumber]) => {
         const args = encodeURIComponent(JSON.stringify([tour.id, stepNumber]));
-        const command = `command:codetour._startTourById?${args}`;
-        return `CodeTour: ${tour.title} (Step #${
+        const command = `command:tourdecode._startTourById?${args}`;
+        return `Tour de Code AI: ${tour.title} (Step #${
           stepNumber + 1
         }) &nbsp;[Start Tour](${command} "Start Tour")\n`;
       });
@@ -142,12 +142,12 @@ export async function registerDecorators() {
   );
 
   store.showMarkers = vscode.workspace
-    .getConfiguration("codetour")
+    .getConfiguration("tourdecode")
     .get("showMarkers", true);
 
   vscode.commands.executeCommand(
     "setContext",
-    "codetour:showingMarkers",
+    "tourdecode:showingMarkers",
     store.showMarkers
   );
 }
