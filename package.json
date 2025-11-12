@@ -1,5 +1,5 @@
 {
-  "name": "codetour-ai",
+  "name": "tourdecode-ai",
   "displayName": "Tour de Code AI",
   "description": "AI-powered codebase tours using Repomix analysis and LLMs. Generate comprehensive, narrative-driven guided tours with mental model flow. Accelerate onboarding from weeks to hours.",
   "publisher": "saurabh-yergattikar",

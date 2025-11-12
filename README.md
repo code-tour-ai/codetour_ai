@@ -395,7 +395,7 @@ Special thanks to:
 
 ## 🔗 Links
 
-- **📦 VS Code Marketplace**: [Install Tour de Code AI](https://marketplace.visualstudio.com/items?itemName=saurabh-yergattikar.codetour-ai)
+- **📦 VS Code Marketplace**: [Install Tour de Code AI](https://marketplace.visualstudio.com/items?itemName=saurabh-yergattikar.tourdecode-ai)
 - **💻 GitHub Repository**: [Tour-de-Code-AI/Tour-de-Code-AI](https://github.com/Tour-de-Code-AI/Tour-de-Code-AI)
 - **🐛 Report Issues**: [GitHub Issues](https://github.com/Tour-de-Code-AI/Tour-de-Code-AI/issues)
 - **📖 Original CodeTour**: [microsoft/codetour](https://github.com/microsoft/codetour)
@@ -435,7 +435,7 @@ A: Yes! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
 If Tour de Code AI helps you or your team:
 - ⭐ **Star** the [GitHub repository](https://github.com/Tour-de-Code-AI/Tour-de-Code-AI)
-- 🎉 **Rate** the extension on [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=saurabh-yergattikar.codetour-ai)
+- 🎉 **Rate** the extension on [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=saurabh-yergattikar.tourdecode-ai)
 - 💬 **Share** with your developer community
 - 🐛 **Report** bugs or request features
 
